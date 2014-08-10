@@ -73,7 +73,7 @@ String.prototype.replaceAll = function (toReplace, txtReplace) {
 // Generates an HTML file
 function GenerateFileHTML(fileData) {
     var html = "<div ext='" + getFileExtension(fileData.FileName) + "' class='thumb' file='" + fileData.RelativePath + "'>" +
-               "    <div class='thumb_image'><img src='" + fileData.RelativeThumbPath + "' /></div>" +
+               "    <div class='thumb_image'><img src='" + fileData.RelativePath + "' width='100px;' /></div>" +
                "    <span class='thumb_name'>" + fileData.FileName + "</span>" +
                "    <span class='thumb_size'>" + fileData.KB + " KB</span>" +
                "</div>";
